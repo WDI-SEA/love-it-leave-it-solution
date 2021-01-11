@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 // Controllers/Routes
-app.use('/love-it', require('./controllers/loveIt'));
-app.use('/leave-it', require('./controllers/leaveIt'));
+app.use('/love-it', require('./routes/loveIt'));
+app.use('/leave-it', require('./routes/leaveIt'));
 
 app.listen(8000, () => console.log(`🎧 You're listening to the sweet sounds of port 8000 🎧`))
