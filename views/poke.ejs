@@ -1,0 +1,17 @@
+<h1>It's <%= pokemon.name %></h1>
+<p>Height: <span id="height"><%= pokemon.height / 10 %> m</span></p>
+
+<form id="pokeheight">
+    Height unit:
+    <select name="unit">
+        <option value="meters">Meters</option>
+        <option value="imperial">Imperial</option>
+        <option value="decimeters">Decimeters</option>
+    </select>
+    <input type="submit">
+</form>
+
+<script>
+    let pokeHeight = <%= pokemon.height %>
+</script>
+<script src='/poke.js'></script>
